@@ -1,5 +1,5 @@
 NAME = pipex
-CC =	cc -fsanitize=address -g3
+CC =	cc 
 CFLAGS = -Wall -Wextra -Werror 
 
 SOURCE = mandatory/error.c mandatory/ft_free.c mandatory/ft_split.c mandatory/ft_split2.c mandatory/ft_start.c mandatory/ft_strjoin.c mandatory/ft_strstr.c mandatory/infile_cmd1.c mandatory/outfile_cmd2.c mandatory/pipex.c

@@ -6,7 +6,7 @@
 /*   By: hfafouri <hfafouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:37:38 by hfafouri          #+#    #+#             */
-/*   Updated: 2024/05/17 16:15:07 by hfafouri         ###   ########.fr       */
+/*   Updated: 2024/05/17 17:52:53 by hfafouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_path(t_data *pipex, char **env)
 	pipex->env_line = NULL;
 	while (env[j])
 	{
-		if (ft_strstr(env[j], "PATH=") != NULL)
+		if (ft_strncmp(env[j], "PATH=", 5) == 0)
 		{
 			pipex->env_line = ft_strstr(env[j], "PATH=");
 			break ;

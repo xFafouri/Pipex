@@ -6,7 +6,7 @@
 /*   By: hfafouri <hfafouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/31 10:35:36 by hfafouri          #+#    #+#             */
-/*   Updated: 2024/05/17 15:44:15 by hfafouri         ###   ########.fr       */
+/*   Updated: 2024/05/17 17:59:35 by hfafouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ void		*ft_malloc(t_malloc **str, int size);
 void		ft_init(t_data *pipex, int ac, char **av, char **env);
 void		parent_process(t_data *pipex, int *i);
 void		close_pipex(t_data *pipex);
+int			ft_strncmp(const char *s1, const char *s2, size_t n);
 
 //------------child1
 
