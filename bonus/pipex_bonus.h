@@ -6,7 +6,7 @@
 /*   By: hfafouri <hfafouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/31 10:35:36 by hfafouri          #+#    #+#             */
-/*   Updated: 2024/05/17 17:59:35 by hfafouri         ###   ########.fr       */
+/*   Updated: 2024/05/18 13:14:04 by hfafouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,7 @@ void		error_fd1(int fd, t_data *pipex);
 void		error_fd2(int fd, t_data *pipex);
 
 void		child1_process(t_data *pipex, int i);
+void		ft_free_all(t_data *pipex);
 void		child_last_process(t_data *pipex, int i);
 void		parent_process(t_data *pipex, int *i);
 

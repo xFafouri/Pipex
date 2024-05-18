@@ -6,7 +6,7 @@
 /*   By: hfafouri <hfafouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:50:22 by hfafouri          #+#    #+#             */
-/*   Updated: 2024/05/17 17:55:38 by hfafouri         ###   ########.fr       */
+/*   Updated: 2024/05/18 13:25:38 by hfafouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,6 @@ int	main(int ac, char **av, char **env)
 			pipex.last_status = pipex.status >> 8;
 		i++;
 	}
-	close_pipex(&pipex);
+	ft_free_all(&pipex);
 	return ((pipex.last_status));
 }

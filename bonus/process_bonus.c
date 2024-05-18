@@ -1,16 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   process.c                                          :+:      :+:    :+:   */
+/*   process_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hfafouri <hfafouri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/15 12:19:29 by hfafouri          #+#    #+#             */
-/*   Updated: 2024/05/17 15:17:48 by hfafouri         ###   ########.fr       */
+/*   Updated: 2024/05/18 13:23:10 by hfafouri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex_bonus.h"
+
+void ft_free_all(t_data *pipex)
+{
+	ft_free2(pipex->env);
+	free(pipex->cmd_loc);
+	// if (pipex->env_line)
+	// 	free(pipex->env_line);
+	if (pipex->cmd)
+		ft_free2(pipex->cmd);
+	if (pipex->cmd_loc)
+		free(pipex->cmd_loc);
+	close_pipex(pipex);
+}
 
 void	child1_process(t_data *pipex, int i)
 {
